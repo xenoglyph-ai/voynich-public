@@ -54,9 +54,10 @@ The underlying manuscript (carbon-dated 1404–1438) is in the public domain. We
 ```
 Lyons, J. (2026). Visual Semantic Profiling of the Voynich Manuscript:
 Reading Meaning from Illustrations in an Undeciphered Codex. Preprint.
+Zenodo dataset: https://doi.org/10.5281/zenodo.19560769
 ```
 
-A Zenodo DOI will be added here once the preprint deposit is finalised.
+The companion dataset — per-page 16-dimensional profile vectors through three independent lenses, full section-level ANOVA / Welch / Kruskal-Wallis tables, classifier results for all five ablations, UMAP seed-stability data, and out-of-distribution probe profiles — is permanently archived on Zenodo at **DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769)** under CC BY-SA 4.0. The dataset and the preprint PDF are mirrored one-for-one between this GitHub repository and the Zenodo deposit; either surface is canonical.
 
 ## License
 
