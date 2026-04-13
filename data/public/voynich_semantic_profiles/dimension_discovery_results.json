@@ -1,0 +1,217 @@
+{
+  "corpus": "Voynich Manuscript (Beinecke MS 408)",
+  "n_images": 206,
+  "max_candidates": 10,
+  "discovered_dimensions": [
+    {
+      "rank": 1,
+      "name": "Herbal Botanical vs. Inscription Text",
+      "prompt": "High end: a medieval manuscript illustration of a plant with detailed leaves, stems, and roots drawn in ink and painted in green and brown, a botanical drawing from an herbal codex showing a single specimen with labeled parts, a hand-drawn flower with petals and seeds in the style of a medieval herbal\nLow end: a photograph of a clay tablet covered in wedge-shaped cuneiform impressions arranged in neat horizontal registers, a stone stele with hieroglyphic cartouches carved in sunken relief, a metal coin with Latin lettering stamped around the rim encircling a portrait bust, a parchment scroll with columns of handwritten script in faded brown ink, a ceramic shard with a single line of painted characters running along the curved surface",
+      "variance_explained": 0.23495018482208252,
+      "confidence": 0.256488561630249,
+      "high_examples": [
+        "f033r",
+        "f065v",
+        "f055v",
+        "f019r",
+        "f040r"
+      ],
+      "low_examples": [
+        "f113r",
+        "f106v",
+        "f114r",
+        "f113v",
+        "f111r"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Pharmaceutical Healing vs. Compositional Structure",
+      "prompt": "High end: a medieval manuscript illustration of apothecary jars, medicine containers, and pharmaceutical preparations, drawings of roots and plant parts arranged near vessels, an herbal recipe page with plant specimens beside containers, pharmaceutical illustrations from a medieval medical text\nLow end: a composition with apparent structure, a center of interest, visual weight distributed across the canvas, elements that relate to each other spatially, an organized composition rather than random scatter",
+      "variance_explained": 0.09440131485462189,
+      "confidence": 0.1584128737449646,
+      "high_examples": [
+        "f079r",
+        "f075v",
+        "f080r",
+        "f077v",
+        "f082r"
+      ],
+      "low_examples": [
+        "_Fore-edge_",
+        "_Spine_",
+        "_Tail_",
+        "_Back_cover_",
+        "_Head_"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Natural Organic vs. Celestial Astronomical",
+      "prompt": "High end: a photograph of a skincare bottle surrounded by fresh green leaves and raw ingredients like honey and oats on a wooden surface, packaging printed on recycled brown paper with a hand-stamped logo and twine wrapping, a lifestyle shot in an open field with wildflowers and soft natural daylight, a food product photographed on a rough-hewn cutting board with herbs and crumbs scattered naturally, a cosmetics flat-lay arranged on river stones with water droplets on the glass containers\nLow end: a medieval manuscript illustration of stars, moons, and celestial circles, an astronomical diagram with concentric rings and zodiac symbols, a hand-drawn chart of the night sky with stars connected by lines, a cosmological diagram showing the sun and moon in an illuminated manuscript",
+      "variance_explained": 0.06865500658750534,
+      "confidence": 0.24269640445709229,
+      "high_examples": [
+        "_Fore-edge_",
+        "_Head_",
+        "_Tail_",
+        "_Spine_",
+        "_Back_cover_"
+      ],
+      "low_examples": [
+        "f071r",
+        "f067r",
+        "f068v",
+        "f073r",
+        "f073v"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Sacred Geometry vs. Animals",
+      "prompt": "High end: sacred geometry in a manuscript, the flower of life, vesica piscis, metatrons cube, platonic solids, golden ratio spirals, precisely constructed geometric patterns with mystical or spiritual significance\nLow end: a photograph of a stone frieze showing a lion attacking a bull with muscles rendered in low relief, a painted ceramic bowl with stylized birds repeating around the interior rim, a carved ivory tusk with elephants and antelope in a continuous spiral composition, a mosaic floor panel with fish and dolphins assembled from small colored tesserae, a gold pendant shaped as a coiled serpent with engraved scales along its body",
+      "variance_explained": 0.041715845465660095,
+      "confidence": 0.2023119181394577,
+      "high_examples": [
+        "f068v",
+        "f068r",
+        "f067r",
+        "f009v",
+        "f066r"
+      ],
+      "low_examples": [
+        "_Fore-edge_",
+        "f099r",
+        "f099v",
+        "f075v",
+        "f083v"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Airfield Runway vs. Pharmaceutical Healing",
+      "prompt": "High end: a satellite image of an airfield with long straight runway strips of grey concrete, taxiways connecting to apron areas, aircraft parked on the tarmac visible as small shapes with wing shadows, hangars as large rectangular buildings adjacent to the runway\nLow end: a medieval manuscript illustration of apothecary jars, medicine containers, and pharmaceutical preparations, drawings of roots and plant parts arranged near vessels, an herbal recipe page with plant specimens beside containers, pharmaceutical illustrations from a medieval medical text",
+      "variance_explained": 0.037787918001413345,
+      "confidence": 0.12795332074165344,
+      "high_examples": [
+        "f116v",
+        "_Inside_front_cover_",
+        "_Front_cover_",
+        "_Back_cover_",
+        "_Back_flyleaf_recto_"
+      ],
+      "low_examples": [
+        "f088v",
+        "f099r",
+        "f094v",
+        "f093v",
+        "f100v"
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Geometric Mathematical vs. Concealment",
+      "prompt": "High end: a medieval manuscript illustration with precise geometric constructions, circles divided into segments with radial lines, mathematical diagrams, grid patterns, regular polygons and symmetrical designs drawn with compass and straightedge in an old manuscript\nLow end: a photograph of deliberate efforts to hide objects or positions from aerial or ground observation: large camouflage netting with attached leaves or strips stretched on poles over a vehicle or artillery piece casting dappled shadow, a sniper in a full ghillie suit made of burlap and vegetation lying flat and nearly invisible against a bush line, a military vehicle or gun emplacement concealed inside a barn or under a bridge to avoid aerial detection, freshly cut tree branches piled on top of a tank or truck to break up its outline, an equipment cache buried in a hole and covered with a tarp weighted down by dirt \u2014 the key visual feature is physical concealment materials (netting, foliage, tarps, earth) actively hiding equipment or people, not standard-issue camouflage-patterned uniforms worn by troops in the open or soldiers simply standing in a wooded area",
+      "variance_explained": 0.03038317710161209,
+      "confidence": 0.09886819869279861,
+      "high_examples": [
+        "f013r",
+        "f020r",
+        "f073r",
+        "f010r",
+        "f071r"
+      ],
+      "low_examples": [
+        "f019v",
+        "f086v",
+        "f084v",
+        "f050v",
+        "f044r"
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Tree Of Life vs. Vessel Small Craft",
+      "prompt": "High end: a kabbalistic or hermetic tree of life diagram, connected spheres or sephiroth arranged in a branching pattern, emanation from unity to multiplicity, mystical tree diagram with interconnected nodes in esoteric manuscript tradition\nLow end: a photograph of small fishing boats, speedboats, inflatable dinghies, kayaks, sailboats near a coastline, recreational watercraft",
+      "variance_explained": 0.025253580883145332,
+      "confidence": 0.1427135318517685,
+      "high_examples": [
+        "_Fore-edge_",
+        "_Head_",
+        "_Tail_",
+        "f022v",
+        "f044r"
+      ],
+      "low_examples": [
+        "f100v",
+        "f085v",
+        "f005r",
+        "f088v",
+        "f100r"
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Environment Context vs. Color Preservation",
+      "prompt": "High end: a photograph of a product placed on a kitchen counter in a fully styled home setting with props suggesting daily use, a tent and camping gear arranged at a scenic overlook with mountains in the background, a coffee brand bag sitting on a cafe counter with espresso machines and pastry cases behind it, a tech gadget on a desk surrounded by notebooks and plants in a natural-light home office, a bottle of wine on a set dinner table with candles and glassware establishing an evening ambiance\nLow end: a photograph of a painted tomb wall with vivid red and blue pigments surviving in sheltered recesses while exposed areas have faded to bare plaster, a ceramic vessel with one side retaining bright glaze colors and the opposite side bleached pale by sunlight exposure, a textile fragment with dye visible only along fold lines where the fabric was protected, a fresco with ultramarine blue still saturated in the shadowed upper register and chalky white below, a wooden sculpture with traces of original polychrome visible under later overpainting",
+      "variance_explained": 0.020028727129101753,
+      "confidence": 0.11933983117341995,
+      "high_examples": [
+        "f058v",
+        "f073v",
+        "f066r",
+        "f055v",
+        "f057v"
+      ],
+      "low_examples": [
+        "f085v",
+        "f011r",
+        "f003v",
+        "f068v",
+        "f004v"
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Philosophers Stone vs. Water Bodies",
+      "prompt": "High end: an alchemical illustration of the philosophers stone, the ultimate goal of the great work, depicted as a glowing red stone, a crowned figure, the rebis or hermaphrodite, gold emerging from base metal, the culmination of alchemical achievement\nLow end: a satellite image showing rivers, lakes, reservoirs, or coastal waters as dark blue or black areas contrasting with land, dam structures creating geometric water boundaries, river deltas with branching channels, ocean shoreline from orbit",
+      "variance_explained": 0.0185992531478405,
+      "confidence": 0.16327634453773499,
+      "high_examples": [
+        "f019v",
+        "f038r",
+        "f088r",
+        "f004r",
+        "f099v"
+      ],
+      "low_examples": [
+        "f020v",
+        "f010v",
+        "f084v",
+        "_Tail_",
+        "f050r"
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "Structural Integrity vs. Woven Textile",
+      "prompt": "High end: a photograph of a marble column cracked diagonally with an iron clamp holding the two halves together, a ceramic bowl reassembled from fragments with visible adhesive lines and small gaps where shards are missing, a stone arch with a keystone shifted slightly out of alignment and hairline cracks radiating from the joint, a bronze figure with a green patina and a detached arm displayed beside the torso, a wooden beam with deep longitudinal splits and insect bore holes visible along its length\nLow end: a photograph of a tapestry with colored warp and weft threads creating a pictorial scene, a fragment of linen wrapping with a visible plain-weave grid pattern, a ceremonial cloak with feathers or shells stitched into the fabric, a basket with tightly coiled plant fibers forming a spiral from the center outward, an embroidered panel with raised silk threads forming dense floral motifs against a linen ground",
+      "variance_explained": 0.01730867475271225,
+      "confidence": 0.11084882915019989,
+      "high_examples": [
+        "f002v",
+        "f008r",
+        "f070v",
+        "f049v",
+        "f005r"
+      ],
+      "low_examples": [
+        "f085v",
+        "f053r",
+        "f046v",
+        "_Inside_front_cover_",
+        "f089v"
+      ]
+    }
+  ]
+}

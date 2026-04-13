@@ -1,0 +1,91 @@
+name: Voynich
+description: >-
+  SKELETON. 16 dimensions for medieval manuscript illustration analysis.
+  This public skeleton file contains the dimension *names* and *category
+  groupings* that are disclosed in the preprint (see §3.1, Appendix A) but
+  NOT the `prompt` strings themselves, which are covered by a pending US
+  provisional patent application (filed March 2026) and withheld per §3.2
+  of the preprint. This file is provided so that external researchers can
+  reproduce the *structure* of the Voynich lens and fill in their own prompt
+  descriptors against any CLIP-family vision-language encoder — this is
+  exactly the lens-specificity control that §5.6 of the preprint recommends
+  for anyone who wants to verify that the section signal is a property of
+  the manuscript rather than of any particular lens. To request the full
+  production lens under a research-use agreement, see the contact section
+  of the companion repository README.
+author: Xenoglyph Core (public skeleton)
+created_date: "2026-04-03"
+dimensions:
+  # ── Natural World ──
+  herbal_botanical:
+    prompt: >-
+      # REDACTED — provide your own botanical/herbal descriptor here.
+    category: Natural World
+  pharmaceutical_healing:
+    prompt: >-
+      # REDACTED — provide your own pharmaceutical/healing descriptor here.
+    category: Natural World
+  natural_organic:
+    prompt: >-
+      # REDACTED — provide your own natural/organic descriptor here.
+    category: Natural World
+
+  # ── Celestial ──
+  celestial_astronomical:
+    prompt: >-
+      # REDACTED — provide your own celestial/astronomical descriptor here.
+    category: Celestial
+  cosmological_mapping:
+    prompt: >-
+      # REDACTED — provide your own cosmological-mapping descriptor here.
+    category: Celestial
+  cyclical_seasonal:
+    prompt: >-
+      # REDACTED — provide your own cyclical/seasonal descriptor here.
+    category: Celestial
+  luminous_radiant:
+    prompt: >-
+      # REDACTED — provide your own luminous/radiant descriptor here.
+    category: Celestial
+
+  # ── Esoteric ──
+  alchemical_transformation:
+    prompt: >-
+      # REDACTED — provide your own alchemical-transformation descriptor here.
+    category: Esoteric
+  ritualistic_ceremonial:
+    prompt: >-
+      # REDACTED — provide your own ritualistic/ceremonial descriptor here.
+    category: Esoteric
+  encoded_hidden:
+    prompt: >-
+      # REDACTED — provide your own encoded/hidden-script descriptor here.
+    category: Esoteric
+  supernatural_mystical:
+    prompt: >-
+      # REDACTED — provide your own supernatural/mystical descriptor here.
+    category: Esoteric
+
+  # ── Biological ──
+  anatomical_biological:
+    prompt: >-
+      # REDACTED — provide your own anatomical/biological descriptor here.
+    category: Biological
+  aquatic_fluid:
+    prompt: >-
+      # REDACTED — provide your own aquatic/fluid descriptor here.
+    category: Biological
+  fertility_reproduction:
+    prompt: >-
+      # REDACTED — provide your own fertility/reproduction descriptor here.
+    category: Biological
+
+  # ── Structural ──
+  geometric_mathematical:
+    prompt: >-
+      # REDACTED — provide your own geometric/mathematical descriptor here.
+    category: Structural
+  interconnected_networked:
+    prompt: >-
+      # REDACTED — provide your own interconnected/networked descriptor here.
+    category: Structural

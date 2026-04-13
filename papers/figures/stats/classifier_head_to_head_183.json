@@ -1,0 +1,25 @@
+{
+  "n": 182,
+  "intersection_basis": "pages with both visual profile and Takahashi transcription",
+  "majority_baseline": 0.6483516483516484,
+  "voynich_16d": {
+    "n_features": 16,
+    "n_samples": 182,
+    "accuracy_loocv": 0.9230769230769231,
+    "accuracy_10fold": 0.9230769230769231,
+    "accuracy_loocv_wilson95": [
+      0.8750340857554002,
+      0.9536286033303589
+    ]
+  },
+  "voynich_raw_768d": {
+    "n_features": 768,
+    "n_samples": 182,
+    "accuracy_loocv": 0.9615384615384616,
+    "accuracy_10fold": 0.9560439560439561,
+    "accuracy_loocv_wilson95": [
+      0.9227489451256344,
+      0.9812467156951937
+    ]
+  }
+}

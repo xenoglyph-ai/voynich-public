@@ -1,0 +1,202 @@
+{
+  "corpus": {
+    "transcriber": "Takeshi Takahashi (LSI IVTFF ;H)",
+    "source": "http://www.voynich.nu/data/beta/LSI_ivtff_0d.txt",
+    "n_analysed_pages_with_text": 183,
+    "section_coverage": {
+      "herbal": 118,
+      "recipes": 23,
+      "cosmological": 20,
+      "pharmaceutical": 16,
+      "astronomical": 6
+    }
+  },
+  "feature_spaces": {
+    "char_ngram_tfidf": {
+      "n_features": 2191,
+      "n_samples": 183,
+      "accuracy_10fold": 0.9234972677595629,
+      "accuracy_loocv": 0.9234972677595629,
+      "accuracy_loocv_wilson95": [
+        0.8756946361549391,
+        0.9538850720042718
+      ],
+      "majority_baseline": 0.644808743169399,
+      "labels": [
+        "astronomical",
+        "cosmological",
+        "herbal",
+        "pharmaceutical",
+        "recipes"
+      ],
+      "confusion_matrix_loocv": [
+        [
+          1,
+          0,
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          118,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23
+        ]
+      ],
+      "class_counts": {
+        "astronomical": 6,
+        "cosmological": 20,
+        "herbal": 118,
+        "pharmaceutical": 16,
+        "recipes": 23
+      }
+    },
+    "word_length_stats": {
+      "n_features": 8,
+      "n_samples": 183,
+      "accuracy_10fold": 0.8415300546448088,
+      "accuracy_loocv": 0.825136612021858,
+      "accuracy_loocv_wilson95": [
+        0.7635760758732114,
+        0.8733270549070861
+      ],
+      "majority_baseline": 0.644808743169399,
+      "labels": [
+        "astronomical",
+        "cosmological",
+        "herbal",
+        "pharmaceutical",
+        "recipes"
+      ],
+      "confusion_matrix_loocv": [
+        [
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        [
+          0,
+          16,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          114,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          15,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          20
+        ]
+      ],
+      "class_counts": {
+        "astronomical": 6,
+        "cosmological": 20,
+        "herbal": 118,
+        "pharmaceutical": 16,
+        "recipes": 23
+      }
+    },
+    "joint_ngram_plus_wordlen": {
+      "n_features": 2199,
+      "n_samples": 183,
+      "accuracy_10fold": 0.9234972677595629,
+      "accuracy_loocv": 0.9289617486338798,
+      "accuracy_loocv_wilson95": [
+        0.8822654929699374,
+        0.958018469488102
+      ],
+      "majority_baseline": 0.644808743169399,
+      "labels": [
+        "astronomical",
+        "cosmological",
+        "herbal",
+        "pharmaceutical",
+        "recipes"
+      ],
+      "confusion_matrix_loocv": [
+        [
+          1,
+          0,
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          118,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23
+        ]
+      ],
+      "class_counts": {
+        "astronomical": 6,
+        "cosmological": 20,
+        "herbal": 118,
+        "pharmaceutical": 16,
+        "recipes": 23
+      }
+    }
+  }
+}

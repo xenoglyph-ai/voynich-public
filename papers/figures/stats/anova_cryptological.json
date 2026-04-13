@@ -1,0 +1,393 @@
+{
+  "lens": "cryptological",
+  "n_dimensions": 16,
+  "n_significant_classical_p01": 15,
+  "n_significant_welch_p01": 15,
+  "n_significant_kruskal_p01": 15,
+  "per_dimension": [
+    {
+      "dimension": "materia_medica",
+      "F_classical": 174.95276343846825,
+      "p_classical": 1e-15,
+      "F_welch": 266.4075098432116,
+      "p_welch": 1e-15,
+      "H_kruskal": 116.39337211541738,
+      "p_kruskal": 1e-15,
+      "eta_squared": 0.7847077593490014,
+      "section_means": {
+        "herbal": 0.33856661541987276,
+        "astronomical": 0.2320436884959539,
+        "cosmological": 0.2567961967509726,
+        "pharmaceutical": 0.34057082384824755,
+        "recipes": 0.23102403059601784
+      },
+      "section_stds": {
+        "herbal": 0.02636219090942376,
+        "astronomical": 0.01921338143807422,
+        "cosmological": 0.025508324071709262,
+        "pharmaceutical": 0.017937340886683615,
+        "recipes": 0.014265107936478467
+      }
+    },
+    {
+      "dimension": "astrological_houses",
+      "F_classical": 116.22236009513064,
+      "p_classical": 1e-15,
+      "F_welch": 117.19744065462658,
+      "p_welch": 1e-15,
+      "H_kruskal": 59.59956596439963,
+      "p_kruskal": 3.5210025966611633e-12,
+      "eta_squared": 0.7077133712352291,
+      "section_means": {
+        "herbal": 0.16780241711412447,
+        "astronomical": 0.3100222125649452,
+        "cosmological": 0.19596590814383133,
+        "pharmaceutical": 0.165441907197237,
+        "recipes": 0.18032470097144446
+      },
+      "section_stds": {
+        "herbal": 0.02210381100602702,
+        "astronomical": 0.021453613409957502,
+        "cosmological": 0.027901490492523995,
+        "pharmaceutical": 0.02400861208227855,
+        "recipes": 0.014470275643976085
+      }
+    },
+    {
+      "dimension": "anatomical_volvelle",
+      "F_classical": 95.3769558901325,
+      "p_classical": 1e-15,
+      "F_welch": 117.20643049869852,
+      "p_welch": 1e-15,
+      "H_kruskal": 60.88554424727897,
+      "p_kruskal": 1.8897000784618276e-12,
+      "eta_squared": 0.6652181677174007,
+      "section_means": {
+        "herbal": 0.17773042404550618,
+        "astronomical": 0.2901740074157715,
+        "cosmological": 0.19735486611076022,
+        "pharmaceutical": 0.16190398409962653,
+        "recipes": 0.17913980036973953
+      },
+      "section_stds": {
+        "herbal": 0.02113087015052285,
+        "astronomical": 0.01725609941685933,
+        "cosmological": 0.018005208236068857,
+        "pharmaceutical": 0.021973092561841014,
+        "recipes": 0.01567327116067948
+      }
+    },
+    {
+      "dimension": "symbol_substitution",
+      "F_classical": 86.60447504108518,
+      "p_classical": 1e-15,
+      "F_welch": 127.20059179799259,
+      "p_welch": 1e-15,
+      "H_kruskal": 109.92098079992309,
+      "p_kruskal": 1e-15,
+      "eta_squared": 0.6433996716279377,
+      "section_means": {
+        "herbal": 0.15000435539473922,
+        "astronomical": 0.2281714230775833,
+        "cosmological": 0.1976746275373127,
+        "pharmaceutical": 0.14998811669647694,
+        "recipes": 0.20500448159873486
+      },
+      "section_stds": {
+        "herbal": 0.022051830159745857,
+        "astronomical": 0.01809307844773143,
+        "cosmological": 0.015183634420147654,
+        "pharmaceutical": 0.02362682278402997,
+        "recipes": 0.009369584873200823
+      }
+    },
+    {
+      "dimension": "sigil_construction",
+      "F_classical": 85.3427284538575,
+      "p_classical": 1e-15,
+      "F_welch": 119.67782258728245,
+      "p_welch": 1e-15,
+      "H_kruskal": 46.11194227020462,
+      "p_kruskal": 2.3342203721209718e-09,
+      "eta_squared": 0.6400253650381083,
+      "section_means": {
+        "herbal": 0.08810753002762794,
+        "astronomical": 0.19341767206788063,
+        "cosmological": 0.09941759640755861,
+        "pharmaceutical": 0.08928815554827452,
+        "recipes": 0.07821268200253446
+      },
+      "section_stds": {
+        "herbal": 0.0204637376460341,
+        "astronomical": 0.01605909970211527,
+        "cosmological": 0.020902480776447713,
+        "pharmaceutical": 0.01916967125831623,
+        "recipes": 0.014013921095012481
+      }
+    },
+    {
+      "dimension": "elemental_tetrad",
+      "F_classical": 66.21527971176117,
+      "p_classical": 1e-15,
+      "F_welch": 90.2831865731047,
+      "p_welch": 1e-15,
+      "H_kruskal": 83.85188970984223,
+      "p_kruskal": 1e-15,
+      "eta_squared": 0.5797409933142486,
+      "section_means": {
+        "herbal": 0.1572782715498391,
+        "astronomical": 0.23091967279712358,
+        "cosmological": 0.1587502068799475,
+        "pharmaceutical": 0.1679527759552002,
+        "recipes": 0.10840681505699952
+      },
+      "section_stds": {
+        "herbal": 0.021379350644413528,
+        "astronomical": 0.021264656210038,
+        "cosmological": 0.02903179404390009,
+        "pharmaceutical": 0.02047730213710857,
+        "recipes": 0.015390334703536243
+      }
+    },
+    {
+      "dimension": "visual_mnemonic",
+      "F_classical": 61.602672736141095,
+      "p_classical": 1e-15,
+      "F_welch": 108.70278989784393,
+      "p_welch": 1e-15,
+      "H_kruskal": 85.9228787185433,
+      "p_kruskal": 1e-15,
+      "eta_squared": 0.5620544754820367,
+      "section_means": {
+        "herbal": 0.15348373858605402,
+        "astronomical": 0.18765631690621376,
+        "cosmological": 0.14854478641696597,
+        "pharmaceutical": 0.16865110099315644,
+        "recipes": 0.10532656405121088
+      },
+      "section_stds": {
+        "herbal": 0.015511338575751779,
+        "astronomical": 0.015601286118038732,
+        "cosmological": 0.02687955147511853,
+        "pharmaceutical": 0.01985409999788293,
+        "recipes": 0.011179539463801279
+      }
+    },
+    {
+      "dimension": "sacred_geometry",
+      "F_classical": 54.06516282817274,
+      "p_classical": 1e-15,
+      "F_welch": 25.52407674033906,
+      "p_welch": 9.447909121718112e-11,
+      "H_kruskal": 52.769848400399155,
+      "p_kruskal": 9.521043679895223e-11,
+      "eta_squared": 0.5297122086523461,
+      "section_means": {
+        "herbal": 0.14148859452393095,
+        "astronomical": 0.21877229337890944,
+        "cosmological": 0.13829196924748627,
+        "pharmaceutical": 0.11995687447488308,
+        "recipes": 0.14420081612964472
+      },
+      "section_stds": {
+        "herbal": 0.018899774364326345,
+        "astronomical": 0.032393392066739156,
+        "cosmological": 0.021696154665968786,
+        "pharmaceutical": 0.015841983806705883,
+        "recipes": 0.010826694746602325
+      }
+    },
+    {
+      "dimension": "as_above_so_below",
+      "F_classical": 49.6638536737545,
+      "p_classical": 1e-15,
+      "F_welch": 74.7207162662716,
+      "p_welch": 1e-15,
+      "H_kruskal": 75.72653176838685,
+      "p_kruskal": 1.3987234419087763e-15,
+      "eta_squared": 0.5085182675635171,
+      "section_means": {
+        "herbal": 0.1578873261430506,
+        "astronomical": 0.2416509985923767,
+        "cosmological": 0.17025606010271155,
+        "pharmaceutical": 0.16566802598536015,
+        "recipes": 0.11638836935162544
+      },
+      "section_stds": {
+        "herbal": 0.025333805834768568,
+        "astronomical": 0.02545637485765291,
+        "cosmological": 0.03362760968307017,
+        "pharmaceutical": 0.026189444054913615,
+        "recipes": 0.014407805293227778
+      }
+    },
+    {
+      "dimension": "baptismal_immersion",
+      "F_classical": 43.30774999780732,
+      "p_classical": 1e-15,
+      "F_welch": 26.41679447778035,
+      "p_welch": 5.525180313270539e-11,
+      "H_kruskal": 52.19204098789328,
+      "p_kruskal": 1.257615299000826e-10,
+      "eta_squared": 0.4743053026588355,
+      "section_means": {
+        "herbal": 0.22864727385468403,
+        "astronomical": 0.23628365993499756,
+        "cosmological": 0.30292401106461236,
+        "pharmaceutical": 0.25696468651294707,
+        "recipes": 0.22051744597653547
+      },
+      "section_stds": {
+        "herbal": 0.02288177397371821,
+        "astronomical": 0.023220017678736916,
+        "cosmological": 0.03961019332247125,
+        "pharmaceutical": 0.04031769768762467,
+        "recipes": 0.008931168810137795
+      }
+    },
+    {
+      "dimension": "steganographic_embedding",
+      "F_classical": 35.477731599385336,
+      "p_classical": 1e-15,
+      "F_welch": 39.61889802170553,
+      "p_welch": 6.405986852087153e-14,
+      "H_kruskal": 75.51785591174291,
+      "p_kruskal": 1.5483805327715362e-15,
+      "eta_squared": 0.42499635435286026,
+      "section_means": {
+        "herbal": 0.26913185581817467,
+        "astronomical": 0.2994588414827983,
+        "cosmological": 0.308586404375408,
+        "pharmaceutical": 0.27109847366809847,
+        "recipes": 0.28225503116846085
+      },
+      "section_stds": {
+        "herbal": 0.01695956749326095,
+        "astronomical": 0.01362216340847048,
+        "cosmological": 0.014614115974738598,
+        "pharmaceutical": 0.02054910745247681,
+        "recipes": 0.010433906412626313
+      }
+    },
+    {
+      "dimension": "tree_of_life",
+      "F_classical": 27.138716180024836,
+      "p_classical": 1e-15,
+      "F_welch": 60.94055238328498,
+      "p_welch": 1e-15,
+      "H_kruskal": 63.897742599243315,
+      "p_kruskal": 4.391592487476807e-13,
+      "eta_squared": 0.3611815261123595,
+      "section_means": {
+        "herbal": 0.20926515770665668,
+        "astronomical": 0.2638502021630605,
+        "cosmological": 0.19560027446435846,
+        "pharmaceutical": 0.20252895280718802,
+        "recipes": 0.16694664706786475
+      },
+      "section_stds": {
+        "herbal": 0.029513122853987394,
+        "astronomical": 0.02153757848170213,
+        "cosmological": 0.02954886020259327,
+        "pharmaceutical": 0.025273293234924523,
+        "recipes": 0.013539284282321004
+      }
+    },
+    {
+      "dimension": "humoral_medicine",
+      "F_classical": 23.169654640217082,
+      "p_classical": 1.2230003855913095e-15,
+      "F_welch": 42.23864380600573,
+      "p_welch": 2.6645352591003757e-14,
+      "H_kruskal": 61.966173080112185,
+      "p_kruskal": 1.1197907005327566e-12,
+      "eta_squared": 0.3255552490362121,
+      "section_means": {
+        "herbal": 0.17439423356268366,
+        "astronomical": 0.21134961396455765,
+        "cosmological": 0.16325039805277533,
+        "pharmaceutical": 0.18823936097323896,
+        "recipes": 0.13740418603022894
+      },
+      "section_stds": {
+        "herbal": 0.024782452623498038,
+        "astronomical": 0.021859857812680798,
+        "cosmological": 0.02618189458076226,
+        "pharmaceutical": 0.03016316588880524,
+        "recipes": 0.013943713483681737
+      }
+    },
+    {
+      "dimension": "solve_et_coagula",
+      "F_classical": 17.678587763040536,
+      "p_classical": 2.2659917616125644e-12,
+      "F_welch": 27.453473353544233,
+      "p_welch": 3.029643202978605e-11,
+      "H_kruskal": 51.87205999069522,
+      "p_kruskal": 1.467097163901751e-10,
+      "eta_squared": 0.26916820786132745,
+      "section_means": {
+        "herbal": 0.18497558531619734,
+        "astronomical": 0.18802993992964426,
+        "cosmological": 0.20464225631693136,
+        "pharmaceutical": 0.20026277527213096,
+        "recipes": 0.16398655188580355
+      },
+      "section_stds": {
+        "herbal": 0.017694931482494094,
+        "astronomical": 0.016688789309612848,
+        "cosmological": 0.025235600711416055,
+        "pharmaceutical": 0.021445784294890642,
+        "recipes": 0.00987246703280418
+      }
+    },
+    {
+      "dimension": "prima_materia",
+      "F_classical": 10.219477598722,
+      "p_classical": 1.6005518469580696e-07,
+      "F_welch": 22.60783364339287,
+      "p_welch": 2.706568302812684e-10,
+      "H_kruskal": 37.11371335422916,
+      "p_kruskal": 1.7067055340092258e-07,
+      "eta_squared": 0.1755336533446726,
+      "section_means": {
+        "herbal": 0.19689376525959726,
+        "astronomical": 0.2122431459526221,
+        "cosmological": 0.2122080850860347,
+        "pharmaceutical": 0.21753588318824768,
+        "recipes": 0.17512024752795696
+      },
+      "section_stds": {
+        "herbal": 0.026596433370166792,
+        "astronomical": 0.01505155813179909,
+        "cosmological": 0.03270605516801085,
+        "pharmaceutical": 0.02846223723297968,
+        "recipes": 0.0124471579813635
+      }
+    },
+    {
+      "dimension": "philosophers_stone",
+      "F_classical": 3.1665665563227696,
+      "p_classical": 0.015062962745335742,
+      "F_welch": 3.366288173251017,
+      "p_welch": 0.01766154205623327,
+      "H_kruskal": 11.806860207172576,
+      "p_kruskal": 0.018846808325192314,
+      "eta_squared": 0.061887415346447046,
+      "section_means": {
+        "herbal": 0.16850533652103553,
+        "astronomical": 0.19281131525834402,
+        "cosmological": 0.1739643086557803,
+        "pharmaceutical": 0.17094174958765507,
+        "recipes": 0.16544276537994543
+      },
+      "section_stds": {
+        "herbal": 0.024219690420691435,
+        "astronomical": 0.024769231118343116,
+        "cosmological": 0.021304083010515746,
+        "pharmaceutical": 0.03385385882416527,
+        "recipes": 0.013307135649651542
+      }
+    }
+  ]
+}

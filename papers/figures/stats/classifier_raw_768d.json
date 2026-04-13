@@ -1,0 +1,124 @@
+{
+  "feature_space": "raw_768d",
+  "n_features": 768,
+  "n_samples": 197,
+  "accuracy_stratified_10fold": 0.9238578680203046,
+  "accuracy_loocv": 0.9238578680203046,
+  "accuracy_loocv_wilson95": [
+    0.8781839883176413,
+    0.9533170552908542
+  ],
+  "majority_baseline_accuracy": 0.5989847715736041,
+  "permutation_p_value": null,
+  "permutation_n": 0,
+  "permutation_null_mean": null,
+  "permutation_null_std": null,
+  "labels": [
+    "astronomical",
+    "cosmological",
+    "herbal",
+    "pharmaceutical",
+    "recipes"
+  ],
+  "confusion_matrix_loocv": [
+    [
+      12,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      21,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      114,
+      2,
+      1
+    ],
+    [
+      0,
+      0,
+      8,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      23
+    ]
+  ],
+  "class_counts": {
+    "astronomical": 12,
+    "cosmological": 23,
+    "herbal": 118,
+    "pharmaceutical": 20,
+    "recipes": 24
+  },
+  "per_class": [
+    {
+      "class": "astronomical",
+      "support": 12,
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1": 0.9230769230769231,
+      "recall_wilson_ci_95": [
+        0.7574992425007574,
+        1.0
+      ]
+    },
+    {
+      "class": "cosmological",
+      "support": 23,
+      "precision": 1.0,
+      "recall": 0.9130434782608695,
+      "f1": 0.9545454545454546,
+      "recall_wilson_ci_95": [
+        0.7320359570190598,
+        0.9758205045927666
+      ]
+    },
+    {
+      "class": "herbal",
+      "support": 118,
+      "precision": 0.926829268292683,
+      "recall": 0.9661016949152542,
+      "f1": 0.946058091286307,
+      "recall_wilson_ci_95": [
+        0.9160711383359593,
+        0.9867403808824357
+      ]
+    },
+    {
+      "class": "pharmaceutical",
+      "support": 20,
+      "precision": 0.8571428571428571,
+      "recall": 0.6,
+      "f1": 0.7058823529411765,
+      "recall_wilson_ci_95": [
+        0.3865779423152061,
+        0.7811960325858074
+      ]
+    },
+    {
+      "class": "recipes",
+      "support": 24,
+      "precision": 0.92,
+      "recall": 0.9583333333333334,
+      "f1": 0.9387755102040817,
+      "recall_wilson_ci_95": [
+        0.7975777375115778,
+        0.992606734645195
+      ]
+    }
+  ]
+}
