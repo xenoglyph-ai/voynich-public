@@ -636,7 +636,9 @@ the system correctly detects it.
 The per-page 16-d profile vectors, the section-level statistical tables,
 the cosine similarity matrix, and the UMAP coordinates computed in §5
 are released as `data/public/voynich_semantic_profiles/` under CC BY-SA
-4.0. No page images are redistributed: the Beinecke IIIF endpoint is the
+4.0 and archived permanently on Zenodo at DOI
+#link("https://doi.org/10.5281/zenodo.19560769")[10.5281/zenodo.19560769].
+No page images are redistributed: the Beinecke IIIF endpoint is the
 canonical source. Researchers who wish to reproduce the analysis with
 alternative vision-language models can do so against the published
 corpus metadata and the Beinecke canonical canvases.
@@ -1717,7 +1719,10 @@ not disclosed in §3 are available upon request under appropriate
 research-use agreement. The per-page 16-d profile vectors, section-level
 statistics, UMAP coordinates, and cross-section similarity data are
 released unconditionally under CC BY-SA 4.0 at
-`data/public/voynich_semantic_profiles/`.
+`data/public/voynich_semantic_profiles/` (Zenodo DOI
+#link("https://doi.org/10.5281/zenodo.19560769")[10.5281/zenodo.19560769];
+public companion repository at
+#link("https://github.com/xenoglyph-ai/voynich-public")).
 
 == Acknowledgements
 <acknowledgements>
@@ -1908,11 +1913,14 @@ for convenience.
 == Appendix B: Reproducibility
 <appendix-b-reproducibility>
 Every number reported in this paper can be regenerated at the
-#emph[statistical layer] from the public dataset and the published
-analysis script `scripts/build_voynich_paper_figures.py`. Running the
-script against the released `voynich_profiles.json`,
-`voynich_archaeology_profiles.json`, and
-`voynich_cryptological_profiles.json` files --- all of which are
+#emph[statistical layer] from the public dataset (Zenodo DOI
+#link("https://doi.org/10.5281/zenodo.19560769")[10.5281/zenodo.19560769],
+mirrored at
+#link("https://github.com/xenoglyph-ai/voynich-public"))
+and the published analysis script
+`scripts/build_voynich_paper_figures.py`. Running the script against the
+released `voynich_profiles.json`, `voynich_archaeology_profiles.json`,
+and `voynich_cryptological_profiles.json` files --- all of which are
 distributed under CC BY-SA 4.0 --- will reproduce:
 
 - the ANOVA / Welch / Kruskal-Wallis tables with $eta^2$ effect sizes;

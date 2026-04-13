@@ -115,7 +115,7 @@ The corpus metadata distributed with our public release lists every downloaded c
 
 ## 4.4 Public release
 
-The per-page 16-d profile vectors, the section-level statistical tables, the cosine similarity matrix, and the UMAP coordinates computed in §5 are released as `data/public/voynich_semantic_profiles/` under CC BY-SA 4.0. No page images are redistributed: the Beinecke IIIF endpoint is the canonical source. Researchers who wish to reproduce the analysis with alternative vision-language models can do so against the published corpus metadata and the Beinecke canonical canvases.
+The per-page 16-d profile vectors, the section-level statistical tables, the cosine similarity matrix, and the UMAP coordinates computed in §5 are released as `data/public/voynich_semantic_profiles/` under CC BY-SA 4.0 and archived permanently on Zenodo at DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769). No page images are redistributed: the Beinecke IIIF endpoint is the canonical source. Researchers who wish to reproduce the analysis with alternative vision-language models can do so against the published corpus metadata and the Beinecke canonical canvases.
 
 # 5. Results
 
@@ -407,7 +407,7 @@ Future work falls into three natural directions. First, we intend to apply xenog
 
 ## Patent and disclosure
 
-The visual semantic profiling method applied in this paper is covered by a United States provisional patent application filed with the United States Patent and Trademark Office in March 2026. Implementation details not disclosed in §3 are available upon request under appropriate research-use agreement. The per-page 16-d profile vectors, section-level statistics, UMAP coordinates, and cross-section similarity data are released unconditionally under CC BY-SA 4.0 at `data/public/voynich_semantic_profiles/`.
+The visual semantic profiling method applied in this paper is covered by a United States provisional patent application filed with the United States Patent and Trademark Office in March 2026. Implementation details not disclosed in §3 are available upon request under appropriate research-use agreement. The per-page 16-d profile vectors, section-level statistics, UMAP coordinates, and cross-section similarity data are released unconditionally under CC BY-SA 4.0 at `data/public/voynich_semantic_profiles/` (Zenodo DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769); public companion repository at <https://github.com/xenoglyph-ai/voynich-public>).
 
 ## Acknowledgements
 
@@ -428,7 +428,7 @@ The full 16 × 5 matrix of section-level mean archetype scores is available in `
 
 ## Appendix B: Reproducibility
 
-Every number reported in this paper can be regenerated at the *statistical layer* from the public dataset and the published analysis script `scripts/build_voynich_paper_figures.py`. Running the script against the released `voynich_profiles.json`, `voynich_archaeology_profiles.json`, and `voynich_cryptological_profiles.json` files — all of which are distributed under CC BY-SA 4.0 — will reproduce:
+Every number reported in this paper can be regenerated at the *statistical layer* from the public dataset (Zenodo DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769), mirrored at <https://github.com/xenoglyph-ai/voynich-public>) and the published analysis script `scripts/build_voynich_paper_figures.py`. Running the script against the released `voynich_profiles.json`, `voynich_archaeology_profiles.json`, and `voynich_cryptological_profiles.json` files — all of which are distributed under CC BY-SA 4.0 — will reproduce:
 
 - the ANOVA / Welch / Kruskal-Wallis tables with $\eta^2$ effect sizes;
 - the Pipeline-wrapped multinomial logistic regression accuracy at LOOCV and stratified 10-fold;
