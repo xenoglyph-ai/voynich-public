@@ -1,0 +1,186 @@
+% Visual Semantic Profiling of the Voynich Manuscript
+% Jacob Lyons — xenoglyph — April 2026
+%
+% arXiv source bundle. Body content is \input{body.tex}, which is
+% auto-generated from the canonical markdown source
+% (../voynich_visual_semantics_preprint.md) by:
+%   pandoc --natbib  →  postprocess.py  →  build/body.tex
+% See Makefile for the pipeline. Everything above \begin{document} is
+% hand-written and lives here so the preamble stays reviewable.
+
+\documentclass[11pt]{article}
+
+% ── Character encoding, fonts, language ───────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% Map the unicode math characters the author used in prose (outside
+% $..$ math mode) onto their LaTeX equivalents. Without these the
+% source markdown's "≥ 84%" and "2770 × 3770" trip pdfTeX with
+% "Unicode character ≥/× not set up for use with LaTeX". This covers
+% every stray unicode math symbol found in the body — add more
+% here if a future paper uses additional Unicode in prose.
+\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}      % ×
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}        % ≥
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}        % ≤
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}           % − (minus)
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}     % ≈
+\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}        % ≠
+% lmodern provides a scalable outline family that microtype's font
+% expansion needs — without it pdfTeX trips on "auto expansion is only
+% possible with scalable fonts" because default Computer Modern is
+% bitmap.
+\usepackage{lmodern}
+\usepackage[english]{babel}
+
+% ── Math + science typography ─────────────────────────────────────────
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% ── Figures ────────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,labelsep=colon,singlelinecheck=false,
+              justification=raggedright}
+
+% ── Tables ─────────────────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+% pandoc uses calc-style lengths like (\linewidth - 4\tabcolsep) * \real{.33}
+% in longtable column specs — the \real macro needs this package.
+\usepackage{calc}
+\providecommand{\real}[1]{#1}
+
+% ── Bibliography ──────────────────────────────────────────────────────
+% natbib + plainnat gives the author-year style arXiv cs.CV reviewers
+% expect, and matches the \citep / \citet pandoc already emits.
+\usepackage[round,authoryear]{natbib}
+\bibliographystyle{plainnat}
+
+% ── Hyperlinks (loaded last, as hyperref requires) ────────────────────
+\usepackage[unicode,breaklinks=true]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=[rgb]{0.0,0.2,0.5},
+  citecolor=[rgb]{0.0,0.3,0.2},
+  urlcolor=[rgb]{0.0,0.3,0.5},
+  pdftitle={Visual Semantic Profiling of the Voynich Manuscript},
+  pdfauthor={Jacob Lyons},
+  pdfsubject={Computer Vision; Digital Humanities},
+  pdfkeywords={Voynich, CLIP, visual semantics, zero-shot, cs.CV, cs.DL}
+}
+\usepackage{url}
+
+% ── Page geometry ─────────────────────────────────────────────────────
+\usepackage[margin=1.25in]{geometry}
+\usepackage{setspace}
+
+% ── Small niceties ────────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{microtype}        % better justification, fewer overfulls
+\usepackage[inline]{enumitem} % pandoc's \tightlist macro (see below)
+% pandoc emits \tightlist to compress markdown lists — define a no-op
+% in case pandoc's header-includes isn't regenerated.
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% pandoc also emits \passthrough{…} around inline-code ranges in some
+% modes; no-op it so the text renders unchanged.
+\providecommand{\passthrough}[1]{#1}
+
+% pandoc suppresses longtable auto-captions by redefining \LTcaptype
+% to "none" and then issuing \addtocounter{\LTcaptype}{-1}. LaTeX
+% needs a matching counter named "none" in scope or the increment
+% errors out. Zero cost, fully idiomatic pandoc workaround.
+\newcounter{none}
+
+% \real is a pandoc column-width helper that stock longtable doesn't
+% know about. Define it as identity so the generated column specs
+% compile.
+\providecommand{\real}[1]{#1}
+
+% ── Title block ───────────────────────────────────────────────────────
+\title{Visual Semantic Profiling of the Voynich Manuscript:\\
+       \large Reading Meaning from Illustrations in an Undeciphered Codex}
+\author{Jacob Lyons\\
+        \textit{xenoglyph}\\
+        \href{https://github.com/xenoglyph-ai/voynich-public}{github.com/xenoglyph-ai/voynich-public}}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+% ── Abstract ──────────────────────────────────────────────────────────
+% Abstract mirrors the YAML frontmatter in the source markdown verbatim.
+% arXiv's abstract field will be populated from this block.
+\begin{abstract}
+The Voynich Manuscript (Beinecke MS 408) is a 240-page illustrated codex
+carbon-dated to 1404--1438 whose script has resisted decipherment for
+more than six centuries. Every quantitative decipherment attempt on
+record --- from William Friedman's WWII codebreakers to contemporary
+neural language models --- has treated the manuscript as a text-first
+object. We present the first systematic \emph{computational} visual
+semantic analysis of the manuscript, treating its 206 page images as
+the primary signal. Using a zero-shot visual semantic profiling platform
+in which a frozen vision-language foundation model is scored against
+sixteen natural-language archetype descriptors, we profile every
+analysable page of the Beinecke digital facsimile (197 pages after
+excluding nine covers and binding flyleaves) and measure whether the
+resulting sixteen-dimensional profiles discriminate between the
+scholarly section taxonomy. All sixteen dimensions discriminate between
+sections at $p < 10^{-15}$ under one-way ANOVA, Welch's robust ANOVA,
+and Kruskal--Wallis tests, with effect sizes ($\eta^2$) between
+0.30 and 0.83. A multinomial logistic regression --- fit inside a
+\texttt{Pipeline} that eliminates cross-validation scaler leakage ---
+recovers scholarly section labels with 90.4\% leave-one-out accuracy
+(Wilson 95\% CI [85.4\%, 93.7\%]; permutation-test $p < 10^{-3}$),
+against a 20\% chance baseline and a 59.9\% majority-class baseline.
+As ablations we report 92.4\% accuracy on the raw 768-d foundation-model
+embeddings (the archetype projection trades a small amount of accuracy
+for full interpretability) and 72.1\% on six handcrafted layout features
+(layout alone carries real but strictly weaker signal). A
+lens-specificity control shows that two alternative 16-d archetype
+lenses --- a cross-cultural archaeological lens and a hermetic
+cryptological lens --- \emph{also} recover section structure well above
+chance (84.8\% and 87.3\% respectively), confirming that the recovered
+signal is a property of the manuscript rather than of the
+target-appropriate lens. A head-to-head comparison against a
+character-n-gram classifier on Takeshi Takahashi's complete Voynichese
+transcription shows that the text channel recovers sections at 92.3\%
+--- statistically indistinguishable from the 16-d visual channel on
+the same 182-page intersection --- while the raw 768-d visual embedding
+achieves 96.2\%: both channels carry the section structure, and the
+visual channel offers the unique advantage of producing profiles that
+are human-readable in a known language. An out-of-distribution sanity
+check applies the voynich lens via a local off-the-shelf CLIP pipeline
+to the Tacuinum Sanitatis (a same-era medieval herbal peer), the Codex
+Seraphinianus, and the Rohonc Codex: the lens fires on
+herbal/pharmaceutical/fertility dimensions for the Tacuinum and on
+\emph{encoded/hidden} for the two undeciphered-script codices,
+confirming that the lens is a legitimate medieval-codex content
+detector rather than a Voynich-specific artefact. The only class where
+the Voynich classifier fails badly is the pharmaceutical section, which
+is misclassified almost exclusively as \emph{herbal} with 50\% recall
+but 91\% precision --- a failure that matches the scholarly observation
+that pharmaceutical pages share the same plant specimens as the herbal
+section, and we show the individual misclassified pages in a
+qualitative gallery. We conclude that the illustrations of the Voynich
+Manuscript encode structured thematic content accessible to
+computational analysis even though the underlying text is not, that
+the scholarly section structure is independently recoverable by a
+non-textual method, and that the broader visual channel of the
+manuscript is considerably richer than the text-first literature has
+assumed. We do not claim to have read the manuscript. We claim only
+that one more channel of the manuscript --- its visual channel --- is
+not empty.
+\end{abstract}
+
+% ── Body (auto-generated from the markdown source) ────────────────────
+\input{body}
+
+% ── Bibliography ──────────────────────────────────────────────────────
+\bibliography{references}
+
+\end{document}

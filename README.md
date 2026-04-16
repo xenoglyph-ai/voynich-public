@@ -22,6 +22,7 @@ This repository contains the preprint, all figures and statistical artefacts, th
 | `scripts/build_voynich_paper_figures.py` | Regenerates all 11 figures from the released profile vectors |
 | `scripts/voynich_text_baseline.py` | Reproduces the character-n-gram text baseline on the 182-page intersection |
 | `scripts/voynich_ood_probe.py` | Reproduces the Tacuinum Sanitatis OOD probe via local OpenCLIP ViT-L/14 |
+| `papers/arxiv_submission/` | Reproducible LaTeX source bundle submitted to arXiv. Compiles via `make package` inside the pinned `xenoglyph-tex` Docker image. See `papers/arxiv_submission/README.md` for the pipeline diagram. |
 
 ## What is *not* in this repository
 
