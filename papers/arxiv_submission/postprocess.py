@@ -67,9 +67,12 @@ def strip_leading_numbers_from_headings(tex: str) -> str:
     the page. Scrub the manual numbers; keep the title text.
     """
     # Match \section{N. Title}, \section{N.M Title}, \section{N.M.K Title}
+    # AND appendix-style prefixes like \subsection{B.1 Title} (letter +
+    # digit). Covers every heading-numbering idiom the author used in
+    # the source markdown.
     pat = re.compile(
         r"\\(section|subsection|subsubsection)\{"
-        r"(?:\d+(?:\.\d+)*\.?\s+)?"  # optional "N.M[.K]" prefix
+        r"(?:(?:\d+|[A-Z])(?:\.\d+)*\.?\s+)?"  # optional "N.M" or "B.1" prefix
         r"([^}]+)\}"
     )
     return pat.sub(r"\\\1{\2}", tex)
@@ -199,6 +202,36 @@ def rewrite_figure_references(tex: str) -> str:
     return pat.sub(_replace, tex)
 
 
+def shrink_longtables(tex: str) -> str:
+    """Squeeze wide tables with \\small so numeric rows fit the column specs.
+
+    Several tables in the Voynich preprint pack six numeric columns of
+    up-to-11-digit values into their rows — at the default 11 pt font
+    those rows overrun the text width by 20–30 pt. \\small (~10 pt)
+    buys the horizontal room without hurting legibility.
+
+    \\small CANNOT go inside the longtable (it would inject
+    \\noalign / \\omit in the wrong spot, breaking the alignment
+    preamble). Wrap the longtable with \\begingroup\\small …
+    \\endgroup so the font change is scoped but fires before the
+    longtable builds its column geometry.
+    """
+    # Wrap bare longtables (no \def{\LTcaptype} wrapper) — these are
+    # the captioned tables after rewrite_captioned_tables ran.
+    # \footnotesize (9 pt) rather than \small (10 pt) because the
+    # table rows with the widest numeric content were still running
+    # 10–20 pt overfull at \small. 9 pt fits every row we have with
+    # room to spare and remains comfortably legible for a paper table.
+    # Also shrink inter-column padding to recover a little more space.
+    tex = re.sub(
+        r"(\\begin\{longtable\}\[\]\{@\{\}.*?\\end\{longtable\})",
+        r"\\begingroup\\footnotesize\\setlength{\\tabcolsep}{4pt}\n\1\n\\endgroup",
+        tex,
+        flags=re.DOTALL,
+    )
+    return tex
+
+
 def rewrite_captioned_tables(tex: str) -> str:
     """Lift "**Table N.** caption" paragraphs into proper \\caption{}s.
 
@@ -277,6 +310,93 @@ def rewrite_table_references(tex: str) -> str:
     return pat.sub(_replace, tex)
 
 
+def fix_references_and_appendix(tex: str) -> str:
+    """Repair the \\section{References} + appendix-as-subsection mess.
+
+    The markdown source has:
+      # References
+      ::: {#refs} :::   (pandoc citeproc placeholder, unused here)
+      \\newpage
+      ## Appendix A: ...
+      ## Appendix B: ...
+      ### B.1 Pipeline correctness note
+
+    Left alone, pandoc's LaTeX lands as:
+      \\section{References}            ← empty section, auto-numbered 8
+      ::: {#refs} :::                   ← raw pandoc div, ignored
+      \\subsection{Appendix A: …}       ← wrongly numbered 8.1
+      \\subsection{Appendix B: …}       ← wrongly numbered 8.2
+      \\subsubsection{B.1 Pipeline …}   ← wrongly numbered 8.2.1
+
+    Meanwhile natbib's own \\bibliography{references} at end of
+    main.tex emits its own "References" heading with the bibitems,
+    giving a duplicate heading and a malformed Table of Structure.
+
+    We repair two things here:
+      1. Drop the empty \\section{References}\\label{references} AND
+         the pandoc refs div — natbib owns the bibliography heading.
+      2. Promote the appendix headings one level up and prefix them
+         with \\appendix so LaTeX switches to A, B, C numbering.
+    """
+    # 1. Remove the empty "References" heading — natbib will emit its
+    # own heading when \bibliography{references} fires at end of main.
+    # Optional pandoc citeproc placeholder (`::: {#refs} :::`) and an
+    # optional \newpage both get swept together so the appendix that
+    # follows sits flush.
+    tex = re.sub(
+        r"\\section\{References\}\\label\{references\}\s*\n+"
+        r"(?:::: \{#refs\}\s*\n:::\s*\n+)?"
+        r"(?:\\newpage\s*\n+)?",
+        "",
+        tex,
+    )
+    # Defensive: strip lone refs div if it ever slips through.
+    tex = re.sub(r"::: \{#refs\}\s*\n:::\s*\n*", "", tex)
+
+    # 2. Promote appendix headings and inject \appendix before the
+    # first one.  The \appendix switch makes \section render as A, B, C.
+    # Map:
+    #   \subsection{Appendix A: <title>}   → \section{<title>}
+    #   \subsection{Appendix B: <title>}   → \section{<title>}
+    #   \subsubsection{<title>}            → \subsection{<title>}
+    def _appendix_section(match: re.Match) -> str:
+        title = match.group(1)
+        return f"\\section{{{title}}}"
+
+    appendix_pat = re.compile(
+        r"\\subsection\{Appendix [A-Z]:\s*([^}]+)\}\\label\{[^}]+\}"
+    )
+    if appendix_pat.search(tex):
+        # Inject \appendix before the first appendix subsection
+        tex = appendix_pat.sub(_appendix_section, tex, count=1)
+        tex = appendix_pat.sub(_appendix_section, tex)  # rest
+        # Find the first \section{...} that came from an appendix
+        # promotion and prepend \appendix before it. Safest: insert
+        # \appendix before the first post-"\section{References}" block.
+        # After stripping References section above, the first \section
+        # not in the main body would be the first promoted appendix.
+        # We detect it by its content not matching the first body
+        # section; but a simpler heuristic is to find the pattern
+        # \section{Full dimension} (first appendix title) and inject
+        # \appendix just before it.
+        tex = re.sub(
+            r"(\\section\{Full dimension)",
+            r"\\appendix\n\1",
+            tex,
+            count=1,
+        )
+
+    # Promote subsubsections to subsections (one level up) since they
+    # sat under the now-promoted appendix section.
+    tex = re.sub(
+        r"\\subsubsection\{([^}]+)\}\\label\{([^}]+)\}",
+        r"\\subsection{\1}\\label{\2}",
+        tex,
+    )
+
+    return tex
+
+
 def main() -> int:
     if len(sys.argv) != 3:
         print("usage: postprocess.py <input.tex> <output.tex>", file=sys.stderr)
@@ -289,6 +409,8 @@ def main() -> int:
     out = rewrite_figure_references(out)
     out = rewrite_captioned_tables(out)
     out = rewrite_table_references(out)
+    out = shrink_longtables(out)
+    out = fix_references_and_appendix(out)
     pathlib.Path(sys.argv[2]).write_text(out, encoding="utf-8")
 
     # Summary of what we did

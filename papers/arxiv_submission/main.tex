@@ -77,6 +77,15 @@
 % ── Page geometry ─────────────────────────────────────────────────────
 \usepackage[margin=1.25in]{geometry}
 \usepackage{setspace}
+% Overfull hbox mitigation for prose with many long URLs / texttt
+% paths. \emergencystretch lets TeX widen inter-word spacing up to
+% 3em when a line can't otherwise be broken — sufficient to absorb
+% every overfull we see without visibly affecting justification.
+\setlength{\emergencystretch}{3em}
+% \sloppy relaxes line-breaking penalties for this document. Combined
+% with the emergencystretch above, this eliminates protruding URLs
+% without needing per-paragraph \begin{sloppypar} wrappers.
+\sloppy
 
 % ── Small niceties ────────────────────────────────────────────────────
 \usepackage{xcolor}
