@@ -22,7 +22,7 @@ This repository contains the preprint, all figures and statistical artefacts, th
 | `scripts/build_voynich_paper_figures.py` | Regenerates all 11 figures from the released profile vectors |
 | `scripts/voynich_text_baseline.py` | Reproduces the character-n-gram text baseline on the 182-page intersection |
 | `scripts/voynich_ood_probe.py` | Reproduces the Tacuinum Sanitatis OOD probe via local OpenCLIP ViT-L/14 |
-| `papers/arxiv_submission/` | Reproducible LaTeX source bundle submitted to arXiv. Compiles via `make package` inside the pinned `xenoglyph-tex` Docker image. See `papers/arxiv_submission/README.md` for the pipeline diagram. |
+| `papers/arxiv_submission/` | Reproducible LaTeX source bundle that was submitted to arXiv in April 2026 (submission `submit/7475838`, primary `cs.CV`). The submission was REJECTED at arXiv moderation on 2026-04-20 under arXiv's 2025-10-31 CS-category policy, which requires review / position papers to complete peer review BEFORE arXiv will consider them. The bundle remains in the repo as a reproducibility artifact; it is NOT currently a live arXiv preprint. Zenodo (DOIs below) is the preprint of record. See `V4_RESTRUCTURING_CHECKLIST.md` for the path-to-journal / IMRaD-restructure planning doc. |
 
 ## What is *not* in this repository
 
@@ -59,6 +59,28 @@ Zenodo dataset: https://doi.org/10.5281/zenodo.19560769
 ```
 
 The companion dataset — per-page 16-dimensional profile vectors through three independent lenses, full section-level ANOVA / Welch / Kruskal-Wallis tables, classifier results for all five ablations, UMAP seed-stability data, and out-of-distribution probe profiles — is permanently archived on Zenodo at **DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769)** under CC BY-SA 4.0. The dataset and the preprint PDF are mirrored one-for-one between this GitHub repository and the Zenodo deposit; either surface is canonical.
+
+## Publication status (updated 2026-04-20)
+
+- **Zenodo preprint of record**: DOI [10.5281/zenodo.19560958](https://doi.org/10.5281/zenodo.19560958).
+  v3.3 remains the citable form. No new version is being cut this week.
+- **Zenodo dataset**: DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769). Unchanged.
+- **arXiv**: submission `submit/7475838` (endorser Ahmed Elgammal,
+  endorsement code `ASKW9V`, now closed) was REJECTED at
+  moderation on 2026-04-20. Likely root cause is arXiv's
+  2025-10-31 CS-category policy requiring review / position
+  papers to complete peer review before arXiv will consider
+  them. Submission privileges are retained. No resubmission
+  attempt this week or next.
+- **Journal path**: under evaluation. No venue has been
+  selected. Decision deferred to 2026-05-01. See
+  `V4_RESTRUCTURING_CHECKLIST.md` (plan-only) for the
+  restructuring delta between v3.3 and either a
+  journal-target or an IMRaD-arXiv-retry variant.
+
+Full durable record of the rejection + policy context lives in
+the private companion repo at
+`xenoglyph/papers/VOYNICH_ARXIV_REJECTION.md`.
 
 ## License
 
