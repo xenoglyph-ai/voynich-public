@@ -413,19 +413,6 @@ systematic computational visual-semantic profiling on a per-page basis
 with quantitative discrimination analysis against the scholarly section
 taxonomy. We ask that question, and we answer it.
 
-== 2.6 Provenance: the Joy Gap
-<provenance-the-joy-gap>
-The method applied in this paper was originally developed and validated
-on a cross-cultural corpus of rock art, where it reproduced the
-long-standing ethnographic observation that ritual and death imagery
-dominate petroglyph traditions while celebration imagery is structurally
-underrepresented --- a result the broader xenoglyph project refers to as
-the #emph[Joy Gap]. That work is the subject of a separate forthcoming
-paper \(Lyons 2026). We mention it here only to establish that
-the present analysis is not a method invented for the Voynich and then
-fit to its data. The method pre-exists the corpus. The Voynich is one
-application of a general visual-semantic profiling platform.
-
 = 3. Method
 <method>
 We describe the method at the level of principle. Implementation details
@@ -1811,12 +1798,6 @@ Manuscript Using Spectral Analysis.” #emph[Cryptologia] 25 (4): 275--95.
 #link("https://doi.org/10.1080/0161-110191889932").
 
 ] <ref-landini2001>
-#block[
-Lyons, Jacob. 2026. “Visual Semantic Profiling Across 40,000 Years of
-Human Expression: The Joy Gap and Topological Structure in Art-Space.”
-Unpublished manuscript.
-
-] <ref-lyons2026>
 #block[
 Montemurro, Marcelo A., and Damián H. Zanette. 2013. “Keywords and
 Co-Occurrence Patterns in the Voynich Manuscript: An

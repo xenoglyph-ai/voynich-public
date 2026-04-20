@@ -1,5 +1,19 @@
 # Voynich preprint — arXiv source bundle
 
+> **⚠ STATUS (2026-04-20):** This source bundle was submitted to
+> arXiv on 2026-04-16 as `submit/7475838` (primary `cs.CV`,
+> cross-list `cs.DL`, endorser Ahmed Elgammal, endorsement code
+> `ASKW9V` — now closed). It was REJECTED at moderation on
+> 2026-04-20 with *"does not contain sufficient original or
+> substantive scholarly research and is not of interest to
+> arXiv."* Likely root cause: arXiv's 2025-10-31 CS-category
+> policy for review / position papers (requires prior peer
+> review). The bundle is retained here as a reproducibility
+> artifact of v3.3, NOT as a pending submission. Any future
+> arXiv attempt uses v4.0 per `V4_RESTRUCTURING_CHECKLIST.md`
+> at the repo root, and only after Jake selects a publication
+> path (deadline 2026-05-01).
+
 This directory builds a reproducible LaTeX source bundle suitable for
 arXiv submission from the canonical markdown source at
 `../voynich_visual_semantics_preprint.md`.
