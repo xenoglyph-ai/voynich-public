@@ -1,5 +1,30 @@
 # CLAUDE.md — xenoglyph-voynich-public directives
 
+## 2026-04-20 (late) — post-validation submission prep
+
+Three landings after the T1-validation-round completed, in support of Path A sequential-same-paper JOCCH-first submission:
+
+### v4.0 PDF regenerated from scrubbed + round-4 source
+
+`papers/arxiv_submission/voynich_visual_semantics_preprint_v4_0.pdf` (42 pages, 10.8 MB) via `make pdf` in `papers/arxiv_submission/` using the `xenoglyph-tex` pandoc/latex Docker image. The pre-existing `arxiv_submission/references.bib` (252 lines, v3.3 state) was synced to the parent `papers/voynich_visual_semantics_preprint.bib` (368 lines post-scrub, 14 new v4.0 bibkeys) — the first compile without the sync had 16 undefined citations. Post-sync: 0 undefined refs, 0 unresolved cross-refs after 4 pdflatex passes. Verified via pypdf extraction: no "joy gap" / "lyons2026" regression; §5.12.5 Chari-Pachter numbers present (54.8% median confirmed in PDF body).
+
+**The v3.3 PDF at `papers/voynich_visual_semantics_preprint.pdf` is preserved unchanged.** v4.0 is a new file with `_v4_0` suffix; Zenodo versioning keeps v3.3 accessible under its immutable version DOI automatically.
+
+### Submission packages staged (all 3 venues)
+
+Per Jake's 2026-04-20 "prep them nonetheless" directive — sequential-fallback packages ready for instant fire-on-decision:
+
+- `submission_packages/jocch/` — PRIMARY. Cover letter (JOCCH-convention framing, ACM reproducibility-badge posture, 5 suggested reviewers: Impett, Aubry, Arnold+Tilton, Manovich, Fagin Davis) + `submission_checklist.md` walking Jake through every ScholarOne field.
+- `submission_packages/cryptologia/` — SEQUENTIAL FALLBACK (fire only on JOCCH REJECT). Cryptologia-convention framing (Friedman → D'Imperio → Currier → Rugg → Hauer-Kondrak positioning; §5.10 Rugg-pressure argument foregrounded); 5 suggested reviewers: Fagin Davis, Zandbergen, Reddy+Knight, Bowern+Lindemann, Rugg himself.
+- `submission_packages/dsh/` — SEQUENTIAL FALLBACK² (fire only on Cryptologia REJECT). Additional precondition: length compression from ~17k to ~10k words per DSH long-paper cap; compression plan sketched in the cover letter; compression preserves every empirical claim. 5 suggested reviewers: Impett, Arnold/Tilton, Piper, Underwood, Drucker.
+- `submission_packages/README.md` — orchestration README with the decision-tree, hard gates (Zenodo v4.0 BEFORE any submission; simultaneous submission banned under COPE/ICMJE + each venue's exclusivity covenant), Axiom-III posture summary.
+
+### Durable submission log
+
+`reports/submission_log.md` — append-only record of Zenodo version DOIs + journal submission events + Manuscript IDs + decisions. Pre-populated skeleton; fill-in-on-event protocol documented in-file. Commit-message prefixes: `voynich-submit:` first-submission, `voynich-decision:` decision-received, `voynich-revise:` revision-upload.
+
+---
+
 ## 2026-04-20 — Voynich journal-targeting pass
 
 arXiv rejected Voynich v3.3 on 2026-04-20 under the 2025-10-31 CS-category moderation policy (requires documented peer review for review/position papers). Paper re-routed to a journal-first path. This repo now carries:
