@@ -1,0 +1,17 @@
+{
+  "iterations": 1000,
+  "null_median": 0.5482233502538071,
+  "null_mean": 0.548984771573604,
+  "null_95ci": [
+    0.5177664974619289,
+    0.5786802030456852
+  ],
+  "null_min": 0.49746192893401014,
+  "null_max": 0.5888324873096447,
+  "real_matrix_loocv": 0.9035532994923858,
+  "p_perm": 0.0,
+  "n_rows": 197,
+  "n_dims": 16,
+  "seed": 20260420,
+  "protocol": "Chari-Pachter marginal-matched null: independently permute each of the 16 columns (break joint structure, preserve each marginal); Pipeline(StandardScaler + LogisticRegression lbfgs max_iter=2000) under LOOCV; 1000 iterations."
+}
