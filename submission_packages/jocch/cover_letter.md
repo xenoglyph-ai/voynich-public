@@ -29,7 +29,7 @@ The revised §5.12 "Control probes and multiple-comparisons hygiene" section com
 
 ## Exclusivity covenant
 
-This manuscript is not currently under consideration at any other journal, conference, or peer-reviewed venue. Upon JOCCH decision (ACCEPT, REVISE, or REJECT), I will abide by ICMJE and COPE guidance on sequential rather than simultaneous submission. An earlier arXiv submission (submit/7475838, 2026-04-13) was rejected at moderation on 2026-04-20 under arXiv's 2025-10-31 CS-category policy requiring documented peer review for review / position papers. The Zenodo preprint at DOI 10.5281/zenodo.19560958 is the preprint of record; it is a non-reviewed preprint under the ICMJE definition and does not constitute prior publication.
+This manuscript is not currently under consideration at any other journal, conference, or peer-reviewed venue. Upon JOCCH decision (ACCEPT, REVISE, or REJECT), I will abide by ICMJE and COPE guidance on sequential rather than simultaneous submission. An earlier arXiv submission (submit/7475838, 2026-04-13) was rejected at moderation on 2026-04-20 under arXiv's 2025-10-31 CS-category policy requiring documented peer review for review / position papers. The Zenodo preprint (this submission version: DOI 10.5281/zenodo.20817371; stable concept DOI 10.5281/zenodo.19560957, which resolves to the latest version) is the preprint of record; it is a non-reviewed preprint under the ICMJE definition and does not constitute prior publication.
 
 ## Conflicts of interest
 
@@ -38,7 +38,7 @@ The profile-generation method applied in this paper is the subject of a pending 
 ## Data + code availability
 
 - **Public dataset (Zenodo, CC BY-SA 4.0):** per-page 16-d profile vectors, section-level statistical tables, cosine similarity matrix, UMAP coordinates. DOI [10.5281/zenodo.19560769](https://doi.org/10.5281/zenodo.19560769).
-- **Public preprint (Zenodo):** the v4.0 manuscript (this submission version) is available under an immutable version DOI under root 10.5281/zenodo.19560958. v3.3 remains accessible under its own immutable version DOI.
+- **Public preprint (Zenodo):** the v4.1 manuscript (this submission version) is available at immutable version DOI 10.5281/zenodo.20817371 (concept DOI 10.5281/zenodo.19560957). Prior versions remain accessible under their own immutable version DOIs.
 - **Chari-Pachter null artifact:** `papers/figures/stats/chari_pachter_null.json` (seed 20260420; reproduces from any standard scikit-learn install on the public profile matrix).
 - **Source images:** Beinecke IIIF canonical source per §4; we do not redistribute page images.
 - **Analysis script:** `scripts/build_voynich_paper_figures.py` in the companion repository (voynich-public on GitHub); reproduces every number in §5 and every figure.

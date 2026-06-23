@@ -7,7 +7,7 @@
 | Version | Publication date | Version DOI | Scope |
 |---|---|---|---|
 | 3.3 | 2026-04-13 | (root 10.5281/zenodo.19560958 resolved to 3.3 until v4.0 published) | Original Zenodo preprint; arXiv submit/7475838 subsequently rejected at moderation 2026-04-20 |
-| 4.0 | [to fill post-upload] | [to fill from Zenodo web UI after "Publish" click] | Journal-targeting revision: §2.6 Joy Gap scrub + round-2 + round-3 + round-4 additive edits + Chari-Pachter null computed + venue-native persona-library expansion |
+| 4.1 | 2026-06-23 | 10.5281/zenodo.20817371 (concept 10.5281/zenodo.19560957) | v4.0 journal-targeting revisions (never separately published) + Chris Stephenson §1 wider-stakes block + acknowledgement + USPTO provisional No. 64/129,348 named in §7 |
 
 ## Journal submission log
 
@@ -15,14 +15,14 @@
 
 | Field | Value |
 |---|---|
-| **Status** | PENDING — ready to submit once Zenodo v4.0 published |
+| **Status** | READY — Zenodo v4.1 published 2026-06-23 (DOI 10.5281/zenodo.20817371); awaiting operator ScholarOne submission |
 | **Venue** | ACM Journal on Computing and Cultural Heritage |
 | **Portal** | ScholarOne (https://mc.manuscriptcentral.com/jocch — verify current URL) |
 | **Submission date** | [to fill] |
 | **Manuscript ID** | [to fill — ScholarOne JOCCH-20XX-XXXX] |
-| **PDF uploaded** | papers/arxiv_submission/voynich_visual_semantics_preprint_v4_0.pdf (42 pages, 10.8 MB) |
+| **PDF uploaded** | papers/arxiv_submission/voynich_visual_semantics_preprint_v4_1.pdf (43 pages, 10.8 MB) |
 | **Cover letter** | submission_packages/jocch/cover_letter.md |
-| **Zenodo v4.0 DOI cited in submission** | [to fill] |
+| **Zenodo DOI cited in submission** | 10.5281/zenodo.20817371 (v4.1; concept 10.5281/zenodo.19560957) |
 | **Suggested reviewers** | Impett; Aubry; Arnold + Tilton; Manovich; Fagin Davis |
 | **Decision target** | ~3 months from submission |
 | **Decision date** | [to fill] |
