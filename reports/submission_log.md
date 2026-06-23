@@ -15,11 +15,11 @@
 
 | Field | Value |
 |---|---|
-| **Status** | READY — Zenodo v4.1 published 2026-06-23 (DOI 10.5281/zenodo.20817371); awaiting operator ScholarOne submission |
+| **Status** | SUBMITTED 2026-06-23 (ScholarOne JOCCH) — under review |
 | **Venue** | ACM Journal on Computing and Cultural Heritage |
 | **Portal** | ScholarOne (https://mc.manuscriptcentral.com/jocch — verify current URL) |
-| **Submission date** | [to fill] |
-| **Manuscript ID** | [to fill — ScholarOne JOCCH-20XX-XXXX] |
+| **Submission date** | 2026-06-23 |
+| **Manuscript ID** | JOCCH-26-0494 |
 | **PDF uploaded** | papers/arxiv_submission/voynich_visual_semantics_preprint_v4_1.pdf (43 pages, 10.8 MB) |
 | **Cover letter** | submission_packages/jocch/cover_letter.md |
 | **Zenodo DOI cited in submission** | 10.5281/zenodo.20817371 (v4.1; concept 10.5281/zenodo.19560957) |
@@ -27,7 +27,7 @@
 | **Decision target** | ~3 months from submission |
 | **Decision date** | [to fill] |
 | **Decision** | [to fill — ACCEPT / MINOR REVISE / MAJOR REVISE / REJECT] |
-| **Notes** | [to fill — any editor comments, reviewer points, decision-letter summary] |
+| **Notes** | Double-blind venue: submitted an anonymized main document (author/affiliation/acks/patent#/DOIs stripped from body + PDF metadata; "xenoglyph"->neutral; Axiom-III->neutral) + a separate Title Page file carrying all identifying info. Cover letter (editor-facing) names author + cites v4.1 DOI. Suggested reviewers (Impett/Aubry/Arnold+Tilton/Manovich/Fagin Davis) conveyed via cover letter. ORCID 0009-0002-2316-9872 linked. |
 
 ### Submission 2 — Cryptologia (SEQUENTIAL FALLBACK; fire only on JOCCH REJECT)
 
