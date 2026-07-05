@@ -97,3 +97,22 @@
 ## Durable rule (Axiom III + COPE/ICMJE)
 
 **Never two journal submissions open at the same time.** When a Submission row has Status = PENDING or is between Submission date + Decision date, the next venue's row is STANDBY. This is non-negotiable under COPE/ICMJE + each venue's own exclusivity covenant. Violations risk retraction + reputational damage + COPE case-database listing.
+
+## 2026-07-05 — JOCCH desk-rejection received
+
+- **Manuscript ID:** JOCCH-26-0494
+- **Editor:** Dr. Karina Rodriguez Echavarria, Editor in Chief
+- **Decision:** desk-reject on scope grounds; no peer review conducted
+- **Timeline:** 12 calendar days from submission to decision
+- **Rejection artifact:** `reports/jocch_rejection_2026-07-05.md`
+- **Fleet-analysis-driven next venue:** DHQ
+
+## 2026-07-05 — Voynich paper v4.2 shipped
+
+- **Universal revisions folded in:** §1 reframed around distant-viewing question; new §6.8 practitioner-impact section; §6.7 expanded with foundation-model political-economy paragraph; §7 closing rhetoric softened toward epistemic modesty; §3.2 model-class disclosure expanded to include open-weight substrate identification
+- **Sole-author byline preserved** (Jacob Lyons)
+- **Chris Stephenson editorial contributions preserved** (§1 wider stakes; §6.6 caveats)
+- **Zenodo v4.2 version bump:** operator-action pending; root DOI 10.5281/zenodo.19560958 stable
+- **Submission packet:** `submission_packages/dhq/`
+- **DHQ submission checklist:** `submission_packages/dhq/submission_checklist.md`
+- **Contingency packets staged:** DSH (`submission_packages/dsh/`) and JCA (`submission_packages/jca/`) with v4.2 manuscript + cover-letter drafts
