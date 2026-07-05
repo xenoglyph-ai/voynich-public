@@ -1,4 +1,15 @@
-# DHQ Submission Checklist — v4.2 for TODAY
+# DHQ Submission Checklist — upload v4.2.1 (corrected)
+
+> **⚠ FILE-REPLACE: upload `submission_packages/dhq/manuscript_v4_2_1.pdf` (45 pp), NOT the original `manuscript_v4_2.pdf`.**
+> v4.2.1 is the corrected manuscript. Relative to the originally-fired v4.2 it **restores**
+> Chris Stephenson's acknowledgement, his §1 wider-stakes framing, and the USPTO application
+> number (№ 64/129,348) — all silently dropped because the v4.2 branch was cut before those
+> v4.1 commits landed — and **fixes** two internal cross-references (§1 + §7 practitioner
+> pointers now correctly cite §6.9). The stronger DHQ framing (distant-viewing §1 lead,
+> §6.7 critical-AI political-economy, §6.9 practitioner section, softened §7) is unchanged.
+> If OJS allows replacing the manuscript file on the existing submission (usually possible
+> before review is assigned), do that and add a one-line note to the editor. The frozen
+> `manuscript_v4_2.pdf` is retained only as the record of what was first uploaded.
 
 **Portal:** https://openjournals.library.northeastern.edu/dhq
 **Alternative:** email submission to editor@digitalhumanities.org if the OJS portal has friction
@@ -10,7 +21,7 @@
 - [ ] Confirm OJS account (login.northeastern.edu OJS-hosted; register if first time)
 - [ ] Verify ORCID linked (if you have one; not blocking if not)
 - [ ] Open cover letter: `submission_packages/dhq/cover_letter.md`
-- [ ] Open v4.2 PDF: `submission_packages/dhq/manuscript_v4_2.pdf` — verify it opens cleanly (48 pages, 8.6 MB)
+- [ ] Open corrected PDF: `submission_packages/dhq/manuscript_v4_2_1.pdf` — verify it opens cleanly (45 pages, 11 MB) and that the Acknowledgements thank Chris Stephenson
 - [ ] Save your Manuscript ID once assigned
 
 ## Step 1 — OJS Author Center (3 min)
