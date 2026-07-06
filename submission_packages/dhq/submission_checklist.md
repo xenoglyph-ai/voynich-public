@@ -1,18 +1,30 @@
-# DHQ Submission Checklist — upload v4.2.1 (corrected)
+# DHQ Submission Checklist — FRESH submission of v4.2.1
 
-> **⚠ FILE-REPLACE: upload `submission_packages/dhq/manuscript_v4_2_1.pdf` (45 pp), NOT the original `manuscript_v4_2.pdf`.**
-> v4.2.1 is the corrected manuscript. Relative to the originally-fired v4.2 it **restores**
-> Chris Stephenson's acknowledgement, his §1 wider-stakes framing, and the USPTO application
-> number (№ 64/129,348) — all silently dropped because the v4.2 branch was cut before those
-> v4.1 commits landed — and **fixes** two internal cross-references (§1 + §7 practitioner
-> pointers now correctly cite §6.9). The stronger DHQ framing (distant-viewing §1 lead,
-> §6.7 critical-AI political-economy, §6.9 practitioner section, softened §7) is unchanged.
-> If OJS allows replacing the manuscript file on the existing submission (usually possible
-> before review is assigned), do that and add a one-line note to the editor. The frozen
-> `manuscript_v4_2.pdf` is retained only as the record of what was first uploaded.
+> **⏰ DEADLINE: DHQ reviews quarterly — next cutoff is JULY 15, 2026 (9 days out).**
+> Submitting before Jul 15 catches this review cycle; missing it means the Oct 15 cycle.
+> Verified 2026-07-06 against DHQ's own submissions page.
 
-**Portal:** https://openjournals.library.northeastern.edu/dhq
-**Alternative:** email submission to editor@digitalhumanities.org if the OJS portal has friction
+> **✅ THIS IS A FRESH SUBMISSION, not a file-replace.** As of 2026-07-06 there is no
+> evidence DHQ was ever actually submitted (no Manuscript ID, no confirmation on record;
+> the "file-replace" language in older commit bodies was aspirational — the prior automation
+> could not drive the OJS portal). Submit v4.2.1 as a new submission. *(If you personally
+> uploaded a v4.2 at some point, do a file-replace on that submission instead and skip
+> creating a new one — a duplicate submission violates COPE/DHQ exclusivity.)*
+
+> **📄 UPLOAD `manuscript_v4_2_1.docx` (DHQ's preferred editable format), NOT the PDF.**
+> DHQ's official submission page lists **XML / RTF / OpenOffice / MS Word** and does **not**
+> list PDF (their pipeline is XML-based; they want editable source for TEI conversion). The
+> `.docx` (built 2026-07-06 from the v4.2.1 source, 11 figures embedded, ~18.5k words) is the
+> primary file; `manuscript_v4_2_1.rtf` is a fallback; `manuscript_v4_2_1.pdf` (45 pp) is a
+> human-readable convenience copy only. All three carry the corrected v4.2.1 content
+> (Chris Stephenson ack + §1 wider-stakes framing + USPTO № 64/129,348 restored; §1/§7
+> practitioner pointers correctly cite §6.9; distant-viewing §1 lead, §6.7 critical-AI
+> political-economy, §6.9 practitioner section, softened §7). Do NOT upload the Chris-less
+> `manuscript_v4_2.pdf`.
+
+**Portal:** http://openjournals.neu.edu/ojs/dhq  *(DHQ's official OJS submission portal; first submission needs a new OJS account)*
+**Alternative:** email the editors at dhqinfo@digitalhumanities.org if the OJS portal has friction
+**Review model:** single-blind — author is named; **do NOT anonymize** the manuscript
 **Article type:** Article (original research)
 **Estimated wall-clock:** 30-45 minutes
 
@@ -54,8 +66,9 @@
 
 ## Step 4 — File Upload (5 min)
 
-- [ ] **Main submission file:** `manuscript_v4_2_1.pdf` (45 pp — the CORRECTED file; see ⚠ banner at top. Do NOT upload the Chris-less `manuscript_v4_2.pdf`.)
+- [ ] **Main submission file:** `manuscript_v4_2_1.docx` (DHQ's preferred editable format — see 📄 banner at top). If OJS rejects .docx for any reason, use `manuscript_v4_2_1.rtf`. The `.pdf` is a convenience copy, not the submission file. Do NOT upload the Chris-less `manuscript_v4_2.pdf`.
 - [ ] **Cover letter:** upload as separate file OR paste content into the "Comments to Editor" field
+- [ ] **Do NOT anonymize** — DHQ is single-blind; the manuscript names the author, which is correct
 - [ ] Supplementary materials: NONE (Zenodo DOI cited in-paper is sufficient for review)
 
 ## Step 5 — Cover Letter (3 min)
