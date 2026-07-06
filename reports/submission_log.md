@@ -112,7 +112,7 @@
 - **Universal revisions folded in:** §1 reframed around distant-viewing question; new §6.8 practitioner-impact section; §6.7 expanded with foundation-model political-economy paragraph; §7 closing rhetoric softened toward epistemic modesty; §3.2 model-class disclosure expanded to include open-weight substrate identification
 - **Sole-author byline preserved** (Jacob Lyons)
 - **Chris Stephenson editorial contributions preserved** (§1 wider stakes; §6.6 caveats)
-- **Zenodo v4.2 version bump:** operator-action pending; root DOI 10.5281/zenodo.19560958 stable
+- **Zenodo v4.2.1 version bump:** operator-action pending (operator-confirmed label 4.2.1 to match manuscript, 2026-07-06); bundle staged at `zenodo_v4_2_1_bundle/`; root DOI 10.5281/zenodo.19560958 stable
 - **Submission packet:** `submission_packages/dhq/`
 - **DHQ submission checklist:** `submission_packages/dhq/submission_checklist.md`
 - **Contingency packets staged:** DSH (`submission_packages/dsh/`) and JCA (`submission_packages/jca/`) with v4.2 manuscript + cover-letter drafts
@@ -135,7 +135,7 @@ now blocked ONLY on two operator-gated actions — everything author-side is don
 ### Parked until the two actions land
 
 - **Manuscript ID + submission timestamp** — paste them here and I will fill the Submission-4 (DHQ) row + close out the checklist in one pass.
-- **Zenodo v4.2 version DOI + publication date** — paste and I add the row to the Zenodo version-history table above.
+- **Zenodo v4.2.1 version DOI + publication date** — paste and I add the row to the Zenodo version-history table above.
 
 ### Provenance cleanup done this session
 
