@@ -83,7 +83,7 @@ Do NOT suggest: Gordon Rugg (adversarial-position specialist; wrong review postu
 - [ ] Simultaneous-submission compliance: check ("not under consideration at any other venue")
 - [ ] Reproducibility statement: check ("Zenodo dataset DOI 10.5281/zenodo.19560769 cited in-paper; profile-generation pipeline patent-boundary honestly disclosed")
 - [ ] Copyright / CC BY license (DHQ default): review + accept
-- [ ] Preprint disclosure: yes, Zenodo preprint at DOI 10.5281/zenodo.19560958 (v4.2.1 pending Zenodo version mint — see `zenodo_v4_2_1_bundle/`; may cite v4.1 DOI 10.5281/zenodo.20817371 for portal purposes and update after DHQ decision if requested)
+- [ ] Preprint disclosure: yes, Zenodo preprint at concept DOI 10.5281/zenodo.19560957 (always resolves to latest), current version **4.2.1 published 2026-07-06 at DOI 10.5281/zenodo.21225873** — cite this version; it matches the uploaded manuscript
 
 ## Step 8 — Review + Submit (5 min)
 

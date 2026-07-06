@@ -59,8 +59,10 @@ pip-install / lyons2026 / McClone — all 0 in source + PDF).
   (`papers/voynich_visual_semantics_preprint.md`).
 - `voynich_visual_semantics_preprint.bib` — bibliography (adds
   bender2021stochastic + birhane2022values over v4.1).
-- `papers/figures/*.png` — figures 1–11 (unchanged from v4.0).
 - `CHANGELOG_v4_2_1.md` (this file).
+
+(Figures 1–11 are embedded in the PDF; they are not uploaded as separate files,
+matching the v4.0/v4.1 deposition file set.)
 
 ## Zenodo-upload sequence (Jake — web UI)
 
