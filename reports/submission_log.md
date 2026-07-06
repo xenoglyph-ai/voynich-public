@@ -116,3 +116,31 @@
 - **Submission packet:** `submission_packages/dhq/`
 - **DHQ submission checklist:** `submission_packages/dhq/submission_checklist.md`
 - **Contingency packets staged:** DSH (`submission_packages/dsh/`) and JCA (`submission_packages/jca/`) with v4.2 manuscript + cover-letter drafts
+
+## 2026-07-06 — DHQ submission STAGED — awaiting operator (2 gated actions)
+
+The DHQ (Digital Humanities Quarterly) packet is complete and verified. This is
+now blocked ONLY on two operator-gated actions — everything author-side is done.
+
+- **Venue:** Digital Humanities Quarterly (DHQ) — the fleet-selected next venue after the JOCCH desk-reject. Single-blind (author named openly; not double-blind like JOCCH).
+- **Upload target:** `submission_packages/dhq/manuscript_v4_2_1.pdf` — the CORRECTED 45-pp manuscript. Verified 2026-07-06: contains Chris Stephenson acknowledgement, USPTO № 64/129,348, and §6.9 cross-refs. (The Chris-less `manuscript_v4_2.pdf`, 48 pp, is retained only as the record of the originally-cut v4.2 branch — do NOT upload it.)
+- **Portal:** https://openjournals.library.northeastern.edu/dhq (OJS) — walkthrough in `submission_packages/dhq/submission_checklist.md` (Step 4 corrected 2026-07-06 to point at the v4.2.1 PDF).
+- **Cover letter:** `submission_packages/dhq/cover_letter.md`.
+
+### ⛔ OPERATOR ACTIONS (only these two remain)
+
+1. **Zenodo v4.2 version mint — HELD ON YOUR GATE.** Mint from master (v4.2.1 == corrected), NOT the Chris-less original. Root DOI 10.5281/zenodo.19560958 stays stable; a new version DOI is minted under it. Do this BEFORE (or concurrent with) the DHQ upload so the cover letter / preprint-disclosure can cite the current version (v4.1 DOI 10.5281/zenodo.20817371 is an acceptable interim cite per checklist Step 7).
+2. **DHQ portal submission (file upload).** Follow `submission_packages/dhq/submission_checklist.md`. I cannot drive the OJS portal.
+
+### Parked until the two actions land
+
+- **Manuscript ID + submission timestamp** — paste them here and I will fill the Submission-4 (DHQ) row + close out the checklist in one pass.
+- **Zenodo v4.2 version DOI + publication date** — paste and I add the row to the Zenodo version-history table above.
+
+### Provenance cleanup done this session
+
+- Archived the dead-JOCCH double-blind upload artifacts (were untracked stragglers in `papers/`) to `submission_packages/jocch/anonymized_upload/` with a provenance README; working tree now clean.
+
+### Reserve branch (R&R round, held)
+
+- `claude/voynich-v4.3-rr-reserve` (pushed) carries the abstract-register harmonization for the eventual DHQ revise-and-resubmit round. Do not merge until a DHQ decision lands.

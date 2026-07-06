@@ -37,7 +37,7 @@
 | Field | Value |
 |---|---|
 | Title | Visual Semantic Profiling of the Voynich Manuscript: Reading Meaning from Illustrations in an Undeciphered Codex |
-| Abstract | Paste from top of manuscript_v4_2.md (updated abstract; ~450 words) |
+| Abstract | Paste the Abstract from page 1 of `manuscript_v4_2_1.pdf` (the uploaded file; ~450 words). Abstract text is unchanged from v4.2. |
 | Keywords | distant viewing; Voynich Manuscript; vision-language foundation model; digital manuscript studies; computational visual semantics; medieval codicology; open-access data release |
 | Language | English |
 | Discipline | Digital Humanities; Manuscript Studies; Computational Cultural Heritage |
@@ -54,7 +54,7 @@
 
 ## Step 4 — File Upload (5 min)
 
-- [ ] **Main submission file:** `manuscript_v4_2.pdf`
+- [ ] **Main submission file:** `manuscript_v4_2_1.pdf` (45 pp — the CORRECTED file; see ⚠ banner at top. Do NOT upload the Chris-less `manuscript_v4_2.pdf`.)
 - [ ] **Cover letter:** upload as separate file OR paste content into the "Comments to Editor" field
 - [ ] Supplementary materials: NONE (Zenodo DOI cited in-paper is sufficient for review)
 
